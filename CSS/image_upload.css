@@ -1,0 +1,77 @@
+.btn-pressed {
+    background-color: rgb(0, 52, 121) !important;
+  }
+
+.btncolor{
+    background-color: rgb(65, 121, 146);
+    color: white;
+}
+  input[type="file"] {
+    width: 350px;
+    max-width: 100%;
+    color: black;
+    
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+  }
+
+  input[type="file"]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: rgb(146, 50, 205);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+
+  input[type="file"]::file-selector-button:hover {
+    background: rgb(146, 50, 205);
+  }
+  @media screen and (max-width: 1786px) {
+    .smallaccess {
+      position: relative;
+      top: 100px;
+      max-width: auto;
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+input[type="file"] {
+    width: 350px;
+    max-width: 100%;
+    color: black;
+    
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+  }
+
+  input[type="file"]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: rgb(97, 105, 161);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+
+  input[type="file"]::file-selector-button:hover {
+    background: rgb(97, 105, 161);
+  }
+  @media screen and (max-width: 1786px) {
+    .smallaccess {
+      position: relative;
+      top: 100px;
+      max-width: auto;
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+  }

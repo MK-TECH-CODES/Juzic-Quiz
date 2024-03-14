@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player CREATE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        input {
+            text-align: center;
+        }
+
+        .card {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<!--🆂🆃🅰🆁🆃
+    🅰🅳🅳 🅿🅻🅰🆈🅴🆁
+🅿🅻🅰🆈🅴🆁-->
+
+<body style="background-image: url(../Image/Background.jpg);">
+
+    <div class="container">
+        <div class="card position-absolute top-50 start-50 translate-middle" style="width: 20rem;">
+            <div class="card-body">
+                <form action="../PHP/playercreate.php" method="post">
+                    <div id="output1" hidden>
+                    </div>
+                    <input class="border border-3 border-dark form-control form-control-lg" type="text"
+                        placeholder="🆃🅴🅰🅼  🅽🅰🅼🅴" aria-label=".form-control-lg example" name="teamname" required>
+                    <br>
+                    <input class="border border-3 border-danger form-control form-control-lg" type="text"
+                        placeholder="🅿🅻🅰🆈🅴🆁  1" aria-label=".form-control-lg example" name="player1" required>
+                    <br>
+                    <input class=" border border-3 border-warning form-control form-control-lg" type="text"
+                        placeholder="🅿🅻🅰🆈🅴🆁  2" aria-label=".form-control-lg example" name="player2">
+                    <br>
+                    <input class="border border-3 border-success form-control form-control-lg" type="text"
+                        placeholder="🅿🅻🅰🆈🅴🆁  3" aria-label=".form-control-lg example" name="player3">
+                    <br>
+                    <input class="border border-3 border-primary form-control form-control-lg" type="text"
+                        placeholder="🅿🅻🅰🆈🅴🆁  4" aria-label=".form-control-lg example" name="player4">
+                    <br>
+                    <input type="submit" style="margin-left: 4.5rem; width: 10rem;" class="btn btn-outline-primary"
+                        value="🆂🆃🅰🆁🆃">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var receivedData = new URLSearchParams(window.location.search).get('data');
+        document.getElementById("output1").innerHTML = "<input type=\"text\" name=\"pin\" value=\"" + receivedData + "\">";
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
